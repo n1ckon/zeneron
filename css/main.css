@@ -1,0 +1,35 @@
+.layout {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -238px;
+    width: 850px;
+}
+    .layout__fake-footer {
+        height: 238px;
+    }
+
+
+    .header {
+        padding: 5px 0 5px;
+        float: left;
+        margin-left:5px;
+        margin-top:3px;
+
+     
+    }
+    .header__slogan {
+        clear: left;
+        float: left;
+        width: 157px;
+        margin-left: 10px;
+        margin-top: -8px;
+
+        color: #b3b3b3;
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: normal;
+        line-height: 15px;
+        text-align: right;
+    }
+    
