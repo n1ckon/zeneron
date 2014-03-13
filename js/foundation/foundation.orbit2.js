@@ -399,9 +399,9 @@
     version: '5.1.1',
 
     settings: {
-      animation: 'slide',
+      animation: 'FadeAnimation',
       timer_speed: 10000,
-      pause_on_hover: false,
+      pause_on_hover: true,
       resume_on_mouseout: false,
       animation_speed: 500,
       stack_on_small: false,
