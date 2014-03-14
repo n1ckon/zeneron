@@ -161,11 +161,12 @@ background-color: #393939;
 .button-2:hover {background:#779f02;}
 
 
-    .footer {
+.footer {
     position: relative;
     width: 100%;
     border: 1px solid #4a4a4a;
     text-align: justify;
+   
 
     background: rgba(0, 0, 0, .4);
 }
@@ -204,7 +205,7 @@ background-color: #393939;
     margin-top: 20px;
     padding: 10px 10px 10px;
     border-radius: 12px;
-    border-style: solid;
+    border-style: solid ;
     background-color: rgba(0, 0, 0, .6);
     font-family: 'Kannada MN';
     text-align: justify;
@@ -241,6 +242,20 @@ background-color: #393939;
             font-family: 'Kannada MN';
             font-weight:bold;
         }
+
+
+.box2 {
+    color:black;
+    font-size:12px;
+    font-family: 'Kannada MN';
+    margin-bottom: 40px;
+    padding: 20px 30px 20px;
+    border-radius: 12px;
+    text-align: justify;
+    background-color: white;
+    list-style-type: none;
+
+}
 .search {
     margin-bottom: 40px;
     padding: 20px 30px 20px;
