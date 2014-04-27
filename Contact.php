@@ -140,9 +140,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    <h3 style="color:#fff;  font-family: 'Kannada MN'; ">Contact Form</h3>
       <br>
 
+<?php 
+$action=$_REQUEST['action']; 
+if ($action=="")    /* display the contact form */ 
+    { 
+    ?> 
+    <form  action="" method="POST" enctype="multipart/form-data"> 
+    <input type="hidden" name="action" value="submit"> 
+    Your name:<br> 
+    <input name="name" type="text" value="" size="30"/><br> 
+    Your email:<br> 
+    <input name="email" type="text" value="" size="30"/><br> 
+    Your message:<br> 
+    <textarea name="message" rows="7" cols="30"></textarea><br> 
+    <input type="submit" value="Send email"/> 
+    </form> 
+    <?php 
+    }  
+else                /* send the submitted data */ 
+    { 
+    $name=$_REQUEST['name']; 
+    $email=$_REQUEST['email']; 
+    $message=$_REQUEST['message']; 
+    if (($name=="")||($email=="")||($message=="")) 
+        { 
+        echo "All fields are required, please fill the form again."; 
+        }
+    else{         
+        $from="From: $email"; 
+        $subject="Message sent using your contact form"; 
+        mail("n.oreshkin@gmail.com", $subject, $message, $from); 
+        echo "Email sent!"; 
+        } 
+    }   
+?> 
 
 
-  
+
+
+
+   <!--    
        <form action="sendmail.php" method="get" id="fname">
             <input class="search__input" type="text" title="Enter Your Name:" placeholder="&nbsp; Enter Your Name:" tabindex="1" name="fname"/>
              <input class="search__input" type="text" title="Enter Your Email:" placeholder="&nbsp; Enter Your Email:" tabindex="1" name="email"/>
@@ -152,7 +189,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <a class="button-1" href="#" onClick="document.getElementById('fname').reset()">Clear</a>
                     <a class="button-1" onClick="document.getElementById('fname').submit()">Send</a>
                 </div> 
-        </form> 
+        </form> -->
       </div>   
      </div>
 
