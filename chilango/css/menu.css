@@ -19,7 +19,7 @@ nav.bt-menu  ul li:first-child+li+li {
 }
 
 nav.bt-menu  ul li a:hover, #current  {
-	color: #5f5e4e;
+	color: #c52e02;
 }
 
 .container {
@@ -27,6 +27,7 @@ nav.bt-menu  ul li a:hover, #current  {
 }
 
 .bt-menu {
+
 	position: relative;
 	top: 0;
 	left: 0;
@@ -66,6 +67,7 @@ nav.bt-menu  ul li a:hover, #current  {
 	width: 54px;
 	height: 31px;
 	cursor: pointer;
+	
 }
 
 .bt-menu-trigger span {
@@ -76,7 +78,7 @@ nav.bt-menu  ul li a:hover, #current  {
 	width: 100%;
 	height: 4px;
 	margin-top: -2px;
-	background-color: #fff;
+	background-color: #d69a24;
 	font-size: 0px;
 	transition: 0.5s ease;
 	-o-transition: 0.5s ease;
@@ -100,7 +102,7 @@ nav.bt-menu  ul li a:hover, #current  {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #fff;
+	background: #d69a24;
 	content: '';
 	transition: 0.5s ease;
 	-o-transition: 0.5s ease;
@@ -176,8 +178,16 @@ nav.bt-menu  ul li a:hover, #current  {
 
 .bt-menu ul li,
 .bt-menu ul li a {
+	 font-size:16px; 
+    line-height:18px; 
+      font-family: 'Kannada MN';
+    padding:0; 
+    color:#d69a24; 
 	text-align: center;
 }
+.bt-menu ul li a.active,
+.bt-menu ul > li > a:hover {color:#c52e02;}
+
 
 .bt-menu ul li {
 	display: inline-block;
@@ -208,7 +218,3 @@ nav.bt-menu  ul li a:hover, #current  {
 	display: none;
 }
 }
-.bt-menu ul li a.active,
-.bt-menu > ul > li > a:hover {color:#c52e02;}
-
-

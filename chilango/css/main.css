@@ -10,7 +10,7 @@ body {
 }
 
 header {
-   /* background-color: #8d8d2d;*/
+    /*background-color: #8d8d2d;*/
     display: block;
     position: relative;
     z-index: 999;
@@ -146,7 +146,7 @@ background-color: #393939;
 
 .button-2 {
     display:inline-block; 
-    padding:12px 19px;
+    padding:12px 29px;
     font-size:13px;
     line-height:1.23em;
     color:#fff; 
@@ -169,7 +169,7 @@ background-color: #393939;
 
 
 .socials {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 0;
     line-height: 0;
@@ -177,7 +177,7 @@ background-color: #393939;
 
 .socials a {
     position: relative;
-    margin: 0 4px 0 5px;
+    margin: 15px 4px 0 5px;
     border-radius: 500px;
     background-color: #fff;
     display: inline-block;
@@ -195,10 +195,10 @@ background-color: #393939;
 
 .menulist {
     margin-bottom: 40px;
-    margin-top: 20px;
+
     padding: 10px 10px 10px;
     border-radius: 12px;
-    border-style: solid;
+
     background-color: rgba(100, 100, 100, .6);
     font-family: 'FontAwesome', cursive;
 
@@ -229,7 +229,7 @@ background-color: #393939;
     color:white;
     font-size:12px;
     font-family: 'Kannada MN';
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 20px 30px 20px;
     border-radius: 12px;
     border-style: solid;
@@ -237,13 +237,22 @@ background-color: #393939;
     list-style-type: none;
 
 }
-        .box1 h4 {
+        .box1 h4, p {
             color:#6d6d6d; 
+            text-align: center;
             font-family: 'Kannada MN';
             font-weight:bold;
         }
+     
 .search {
-    margin-bottom: 40px;
+    margin: 40px auto 40px;
+    padding: 20px 30px 20px;
+    border-radius: 12px;
+     font-family: 'Kannada MN';
+    background-color: rgba(0, 0, 0, .13);
+}
+#search {
+    margin: 40px auto 40px;
     padding: 20px 30px 20px;
     border-radius: 12px;
      font-family: 'Kannada MN';
@@ -271,4 +280,76 @@ background-color: #393939;
 */    }
     .search__input::-webkit-input-placeholder { color: #c1c1c1; }
     .search__input:focus::-webkit-input-placeholder { color: #eee; }
+
+h3.head1 {
+    text-align: center;
+    padding-top: 91px;
+    margin-bottom: 136px;
+    color:#fff;
+    font-family: 'Kannada MN';
+
+}
+.box {
+    position: relative;
+    padding: 0 15px 70px;
+    color:white;
+    font-size:15px;
+    font-family: 'Kannada MN';
+    text-align: center;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+     background-color: rgba(100, 100, 100, .6);
+}
+
+
+.box img {
+    border-radius: 500px;
+    margin-top: -65px;
+}
+
+
+.box>div>a {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    font-family:  'Kannada MN', sans-serif;
+    font-size: 22px;
+}
+
+.box2 {
+    position: relative;
+    color:white;
+    font-size:15px;
+    font-family: 'Kannada MN';
+    text-align: center;
+
+
+}
+
+
+.box2 img {
+    border-radius: 300px;
+    margin-left: -300px;
+    border-style: 
+}
+.box3 {
+ color:#4d4d4d;
+    font-size:20px;
+    font-family: 'Kannada MN';
+    margin-bottom: 30px;
+    padding: 5px 30px 20px;
+    text-align: justify;
+
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+
+}
+    .box3 h1, h4 {
+        padding: 5px 0 5px;
+        text-align: center; 
+        color:#4d4d4d; 
+        list-style-type: none;  
+
+       
+        font-family: 'FontAwesome', strong, cursive;}
 

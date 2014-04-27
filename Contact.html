@@ -139,14 +139,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  <div class="large-6 columns">
    <h3 style="color:#fff;  font-family: 'Kannada MN'; ">Contact Form</h3>
       <br>
-       <form action="poster.php" method="get" id="fname">
+       <form action="sendmail.php" method="get" id="fname">
             <input class="search__input" type="text" title="Enter Your Name:" placeholder="&nbsp; Enter Your Name:" tabindex="1" name="fname"/>
-             <input class="search__input" type="text" title="Enter Your Email:" placeholder="&nbsp; Enter Your Email:" tabindex="1" name="fname"/>
-            <textarea class="search__input" type="text" title="Enter Your Email:"  placeholder="Enter your message here:" name="ftext" id="ftext"></textarea> <br> 
+             <input class="search__input" type="text" title="Enter Your Email:" placeholder="&nbsp; Enter Your Email:" tabindex="1" name="email"/>
+            <textarea class="search__input" type="text" title="Enter Your Message:"  placeholder="Enter your message here:" name="message" id="ftext"></textarea> <br> 
              <div class="clear"></div>
                                                 <div class="buttons">
                                                     <a class="button-1" href="#" onClick="document.getElementById('fname').reset()">Clear</a>
-                                                    <a class="button-1" href="home.html" onClick="document.getElementById('fname').submit()">Send</a>
+                                                    <a class="button-1" type="submit" onClick="document.getElementById('fname').submit()">Send</a>
                                                 </div> 
         </form>
       </div>   

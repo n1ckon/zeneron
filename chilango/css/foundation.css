@@ -2419,27 +2419,35 @@ div.switch {
 
 .tabs {
   *zoom: 1;
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important; 
+}
+  
+
   .tabs:before, .tabs:after {
     content: " ";
     display: table; }
   .tabs:after {
     clear: both; }
   .tabs dd {
+
     position: relative;
+
     margin-bottom: 0 !important;
     float: left; }
     .tabs dd > a {
-      display: block;
-      background: #efefef;
+/*display:block; */
+    
+      border-radius:10px;
+    
+      background-color: rgba(225, 162, 38, .6);
       color: #222222;
       padding: 1rem 2rem;
       font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover {
-        background: #e1e1e1; }
+         background-color: rgba(225, 38, 38, .6);}
     .tabs dd.active a {
-      background: white; }
+       background-color: rgba(255, 255, 255, .6);}
   .tabs.radius dd:first-child a {
     -moz-border-radius-bottomleft: 3px;
     -moz-border-radius-topleft: 3px;
