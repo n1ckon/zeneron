@@ -243,7 +243,7 @@ else                /* send the submitted data */
                   
                           <li> Tel.: (415) 7676 111</li>
                           <li class="email"><a href="mailto:zeneronlabs@gmail.com">zeneronlabs@gmail.com</a></li>
-                          <li class="email"><a href="mailto:bobbgnag07@hotmail.com">zeneronlabs@yahoo.com</a></li>
+                          <li class="email"><a href="mailto:zeneronlabs@yahoo.com">zeneronlabs@yahoo.com</a></li>
                    
                   </ul>  
               </div>
