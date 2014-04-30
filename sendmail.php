@@ -55,15 +55,20 @@ $mail->IsSMTP(); // enable SMTP
 $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
 $mail->SMTPAuth = true; // authentication enabled
 $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
-$mail->Host = "smtp.gmail.com";
+$mail->Host = "smtp.mail.yahoo.com";
 $mail->Port = 465; // or 587
 $mail->IsHTML(true);
-$mail->Username = "zeneronlabs@gmail.com";
-$mail->Password = "5comrapo";
-$mail->SetFrom("zeneronlabs@gmail.com");
+$mail->Username = "zeneronlabs@yahoo.com";
+$mail->Password = "5comrapoN";
+$mail->SetFrom("zeneronlabs@yahoo.com");
 $mail->Subject = "Test";
-$mail->Body = "hello";
-$mail->AddAddress("zeneronlabs@gmail.com");
+$mail->Body = (
+  'У чела имэйл <strong>'.
+  $_POST['email'].
+  '</strong> и он оставил мессагу<hr>'.
+  $_POST['message']
+);
+$mail->AddAddress("zeneronlabs@yahoo.com");
  if(!$mail->Send())
     {
     echo "Mailer Error: " . $mail->ErrorInfo;
