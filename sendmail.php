@@ -42,9 +42,6 @@ $mail->MsgHTML($body);
 $address = "whoto@otherdomain.com";
 $mail->AddAddress($address, "John Doe");
 
-//$mail->AddAttachment("images/phpmailer.gif");      // attachment
-//$mail->AddAttachment("images/phpmailer_mini.gif"); // attachment
-
 if(!$mail->Send()) {
   echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
