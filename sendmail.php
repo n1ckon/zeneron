@@ -12,13 +12,14 @@ $mail             = new PHPMailer();
 $body = (
   'У чела имэйл <strong>'.
   $_POST['email'].
+  $_POST['fname']. 
   '</strong> и он оставил мессагу<hr>'.
   $_POST['message']
 );
 
 $mail->IsSMTP(); // telling the class to use SMTP
 $mail->Host       = "smtp.gmail.com"; // SMTP server
-$mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
+$mail->SMTPDebug  = 1;                     // enables SMTP debug information (for testing)
                                            // 1 = errors and messages
                                            // 2 = messages only
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
@@ -28,9 +29,9 @@ $mail->Port       = 465;                   // set the SMTP port for the GMAIL se
 $mail->Username   = "zeneronlabs@gmail.com";  // GMAIL username
 $mail->Password   = "5comrapo";            // GMAIL password
 
-$mail->SetFrom = ($_POST['email'] . $_POST['fname']);
+$mail->SetFrom("zeneronlabs@gmail.com");
 
-$mail->AddReplyTo("zeneronlabs@gmail.com","Nikolai Oreshkin");
+$mail->AddReplyTo($_POST['email'],  $_POST['fname']);
 
 $mail->Subject    = "feedback from zeneronlabs";
 
