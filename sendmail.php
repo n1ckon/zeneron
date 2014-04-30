@@ -62,6 +62,7 @@ $mail->Username = "zeneronlabs@yahoo.com";
 $mail->Password = "5comrapoN";
 $mail->SetFrom("zeneronlabs@yahoo.com");
 $mail->Subject = "Test";
+$mail->CharSet = 'UTF-8';
 $mail->Body = (
   'У чела имэйл <strong>'.
   $_POST['email'].
