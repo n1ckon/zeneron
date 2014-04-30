@@ -1,7 +1,8 @@
 
 
 <?php
-
+error_reporting(-1);
+ini_set('display_errors', 1);
 
 require_once('phpmail/class.phpmailer.php');
 //include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
@@ -16,7 +17,7 @@ $body = (
 );
 
 $mail->IsSMTP(); // telling the class to use SMTP
-$mail->Host       = "mail.yourdomain.com"; // SMTP server
+$mail->Host       = "smtp.gmail.com"; // SMTP server
 $mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
                                            // 1 = errors and messages
                                            // 2 = messages only
@@ -24,12 +25,12 @@ $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->SMTPSecure = "tls";                 // sets the prefix to the servier
 $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
 $mail->Port       = 465;                   // set the SMTP port for the GMAIL server
-$mail->Username   = "n.oreshkin@gmail.com";  // GMAIL username
-$mail->Password   = "23comrapoN";            // GMAIL password
+$mail->Username   = "zeneronlabs@gmail.com";  // GMAIL username
+$mail->Password   = "5comrapo";            // GMAIL password
 
 $mail->SetFrom = ($_POST['email'] . $_POST['name']);
 
-$mail->AddReplyTo("n.oreshkin@gmail.com","Nikolai Oreshkin");
+$mail->AddReplyTo("zeneronlabs@gmail.com","Nikolai Oreshkin");
 
 $mail->Subject    = "feedback from zeneronlabs";
 
