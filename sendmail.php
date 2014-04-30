@@ -28,7 +28,7 @@ $mail->Port       = 465;                   // set the SMTP port for the GMAIL se
 $mail->Username   = "zeneronlabs@gmail.com";  // GMAIL username
 $mail->Password   = "5comrapo";            // GMAIL password
 
-$mail->SetFrom = ($_POST['email'] . $_POST['name']);
+$mail->SetFrom = ($_POST['email'] . $_POST['fname']);
 
 $mail->AddReplyTo("zeneronlabs@gmail.com","Nikolai Oreshkin");
 
