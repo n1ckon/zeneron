@@ -145,6 +145,7 @@ background-color: #393939;
     border-radius: 4px;
     background:url(../img/button1-tail.gif) 0 0 repeat-x #c42e02;
     cursor:pointer;
+    border: 1px solid black;
 }
 .button-1:hover {background:#c42e02;}
 
