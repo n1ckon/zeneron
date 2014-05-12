@@ -145,7 +145,6 @@ background-color: #393939;
     border-radius: 4px;
     background:url(../img/button1-tail.gif) 0 0 repeat-x #c42e02;
     cursor:pointer;
-    border: 1px solid black;
 }
 .button-1:hover {background:#c42e02;}
 
@@ -267,7 +266,6 @@ background-color: #393939;
     background-color: rgba(0, 0, 0, .13);
 }
 .search__input {
-        box-sizing: border-box;
          font-family: 'Kannada MN';
         margin: 0;
         padding: 5px 10px;
@@ -284,6 +282,21 @@ background-color: #393939;
         font-size: 14px;
       /*  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 */    }
-    .search__input::-webkit-input-placeholder { color: #c1c1c1; }
-    .search__input:focus::-webkit-input-placeholder { color: #eee; }
+    .search__input:focus::-webkit-input-placeholder { color: #eee; }    .search__input::-webkit-input-placeholder { color: #c1c1c1; }
+
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+}
+
+
 
