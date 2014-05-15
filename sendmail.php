@@ -64,9 +64,9 @@ $mail->SetFrom("zeneronlabs@yahoo.com");
 $mail->Subject = "Test";
 $mail->CharSet = 'UTF-8';
 $mail->Body = (
-  'У чела имэйл <strong>'.
+  'Message from <strong>'.
   $_POST['email'].
-  '</strong> и он оставил мессагу<hr>'.
+  '</strong> with text: <hr>'.
   $_POST['message']
 );
 $mail->AddAddress("zeneronlabs@yahoo.com");
@@ -76,7 +76,7 @@ $mail->AddAddress("zeneronlabs@yahoo.com");
     }
     else
     {
-    echo "Message has been sent";
+    echo "Thank You!" . " -" . "<a href='home.html' style='text-decoration:none;color:#ff0099;'> Return to Home page</a>";
     }
 
 
