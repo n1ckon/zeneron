@@ -2,6 +2,13 @@
 [data-role=page]{height: 100% !important; position:relative !important;}
 [data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;} 
 @import "../css/menu.css";
+
+* {
+  margin: 0;
+}
+html{
+  height: 100%;
+}
 body {
     height: 100%;
 
@@ -211,12 +218,18 @@ background-color: #393939;
     text-align: justify;
 
 }
-.inst h1, h4, p, li  {
+.inst h4, p, li  {
     text-align: justify; 
     color:#fff; 
    
     font-family: 'Kannada MN';
     /*font-family: 'Lobster', cursive;*/
+}
+.inst h1 {
+    text-align: center;
+    color:#fff; 
+    font-family: 'Kannada MN';
+    font-size: 2em;
 }
 
 .inst strong {
@@ -282,21 +295,22 @@ background-color: #393939;
         font-size: 14px;
       /*  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 */    }
-    .search__input:focus::-webkit-input-placeholder { color: #eee; }    .search__input::-webkit-input-placeholder { color: #c1c1c1; }
-
-
-* {
-  margin: 0;
-}
-html, body {
-  height: 100%;
-}
-
+    .search__input:focus::-webkit-input-placeholder { color: #eee; }    
+    .search__input::-webkit-input-placeholder { color: #c1c1c1; }
 
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
 }
 
-
+.student {
+    margin: 10%;
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.student h1 {
+        font-size: 2em;
+}
 
