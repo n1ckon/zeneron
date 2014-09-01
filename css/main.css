@@ -13,9 +13,10 @@ body {
     height: 100%;
 
     background-color: #393939;
-    background-image: url('../img/background3.jpg'); 
+    background-image: url('../img/background.gif'); 
+   background-repeat: repeat-y;
     background-size: 100%;
-    background-attachment: fixed;
+ 
 }
 
 header {
@@ -28,19 +29,7 @@ header {
 
   
 }
-.backgroundmenu {
-background-color: #393939;
-    background-image: url('../img/background2.jpg'); 
-    background-size: 100%;
-    background-attachment: fixed; 
-}
-.backgroundinst {
-background-color: #393939;
-    background-image: url('../img/background2.jpg'); 
-    background-size: 100%;
-    background-attachment: fixed;
 
-}
 .main {
     width:960px;    
     padding:0;
@@ -62,6 +51,12 @@ background-color: #393939;
     height: 0;
 }
 
+a>img:hover{
+width:280px;
+}
+
+
+
 /***** menu *****/
 .menu {
     padding:26px 10px 0 0; 
@@ -80,8 +75,11 @@ background-color: #393939;
     padding:0; 
     color:#fff; 
 }
-.menu li a.active,
-.menu > li > a:hover {color:#c52e02;}
+.menu li a.active
+{color:#c52e02;}
+
+.menu > li > a:hover 
+{color:#c52e02; font-size: 1.1em;}
 
 .row-bot {
     width:100%;
